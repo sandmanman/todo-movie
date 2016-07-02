@@ -1,0 +1,22 @@
+
+<div class="movie-detail-card" data-id="{{id}}">
+	<div class="m-cover">
+		<img src="{{images.large}}" alt="{{title}}">
+	</div>
+	<div class="m-info">
+		<div class="m-name">{{title}}<br><small>{{original_title}}</small></div>
+		<div class="m-rating">
+			<span class="rating-star{{rating.stars}}"></span>
+			<strong class="rating-num">{{rating.average}}</strong>
+		</div>
+		<div class="m-base-info">
+			<p>主演： {{each casts as value i}} {{value.name}} {{/each}}</p>
+			<p>{{year}} / {{each countries as value i}} {{value}} {{/each}} / {{each genres as value i}} {{value}} {{/each}}</p>
+		</div>
+		<div class="m-summary">
+			{{summary}}
+		</div>
+	</div>
+
+	<a href="https://movie.douban.com/subject/{{id}}" target="_blank" class="detail-link">详细<i class="md-icon">arrow_forward</i></a>
+</div>

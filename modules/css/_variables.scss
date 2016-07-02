@@ -1,0 +1,30 @@
+//
+// Douban Movie Top250 Variables
+// 05.14.2016 21:46
+// --------------------------------------------------
+
+
+// == Global styles
+//
+
+// Color
+$brand-color:        #e4bb23;
+
+// Background color for `<body>`.
+$body-bg:            #f3f3f3;
+
+// Global text color on `<html>`.
+$text-color:         #333;
+
+// Link color
+$link-color:         #333;
+$link-hover-color:   $brand-color;
+
+
+// == Typography
+//
+// ## Font
+
+// Fonts.css -- 跨平台中文字体解决方案
+// https://github.com/zenozeng/fonts.css
+$font-family:      "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;

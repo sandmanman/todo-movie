@@ -1,0 +1,18 @@
+{{each subjects as value i}}
+<div class="col-md-6 col-lg-4 col-xl-3">
+	<div class="movie-card" data-id="{{value.id}}">
+		<div class="m-cover">
+			<img src="{{value.images.large}}" alt="{{value.title}}">
+		</div>
+		<div class="m-info">
+			<div class="m-name">
+				{{value.title}}</small>
+			</div>
+			<div class="m-rating">
+				<span class="rating-star{{value.rating.stars}}"></span>
+				<strong class="rating-num">{{value.rating.average}}</strong>
+			</div>
+		</div>
+	</div>
+</div>
+{{/each}}

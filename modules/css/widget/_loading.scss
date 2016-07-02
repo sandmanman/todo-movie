@@ -1,0 +1,80 @@
+//
+// Loading
+
+.loading {
+	padding-top: 4em;
+	padding-bottom: 4em;
+
+	.cinefilm-loader {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+
+		display: block;
+
+		width: 116px;
+		height: 56px;
+		overflow: hidden;
+
+		font-size: 0;
+
+		&,
+		.turntable {
+			background-image: url(img/cine_film_loading.png);
+			background: -webkit-image-set(url(img/cine_film_loading.png) 1x, url(img/cine_film_loading@2x.png) 2x);
+			background-repeat: no-repeat;
+		}
+
+		background-position: 0 0;
+
+		.turntable {
+			width: 56px;
+			height: 56px;
+
+			background-position: 0 100%;
+
+			&:nth-child(1) {
+				float: left;
+			}
+			&:nth-child(2) {
+				float: right;
+			}
+
+			animation: cinefilm 2s cubic-bezier(.17,.37,.43,.67) infinite;
+		}
+
+		.text {
+			display: none;
+		}
+
+		// .cinefilm {
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// 	right: 0;
+		// 	bottom: 0;
+		//
+		// 	animation: cinefilm 2s cubic-bezier(.17,.37,.43,.67) infinite;
+		// }
+	}
+}
+// cinefilm-loader animate
+@-webkit-keyframes cinefilm {
+	0% {
+		transform: rotate(0deg);
+	}
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes cinefilm {
+	0% {
+		transform: rotate(0deg);
+	}
+
+  100% {
+      transform: rotate(360deg);
+  }
+}

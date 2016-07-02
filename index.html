@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="renderer" content="webkit">
+    <title>露天电影院</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <link rel="shortcut icon" href="/favicon.png">
+    <!-- Standard iPhone -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <!-- Retina iPhone -->
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <!-- Standard iPad -->
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <!-- Retina iPad -->
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+
+    <link rel="stylesheet" href="modules/css/master.scss">
+    <link rel="stylesheet" href="http://api.youziku.com/webfont/CSS/57373de3f629d8076c7c838b">
+    <link rel="stylesheet" href="http://api.youziku.com/webfont/CSS/57373ecef629d8076c7c838f">
+
+    <script src="lib/es5-shim.js"></script>
+    <script src="lib/es5-sham.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/html5-shim.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="wrapper">
+
+    <div class="movie-jumbotron">
+      <div class="container">
+        <h1 class="site-title">
+          <span class="font-cn">露</span>
+          <span class="font-cn">天</span>
+          <span class="font-cn">电</span>
+          <span class="font-cn">影</span>
+          <span class="font-cn">院</span>
+          <strong class="ticket-style">
+            <i class="md-icon">star</i>
+            <span class="font-en text">Top250</span>
+            <i class="md-icon">star</i>
+          </strong>
+        </h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main">
+        <!-- 电影列表 S -->
+        <div class="row movie-list" id="movieListWrap">
+
+        </div>
+        <!-- 电影列表 End -->
+
+        <div class="load-more-act" id="js-loadMore">
+          <button class="load-more-btn" id="js-loadMoreBtn" type="button"><i class="md-icon">more_horiz</i></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<link rel="import" href="modules/html/movie_detail/_movie_detail_modal.html?__inline">
+
+<link rel="import" href="modules/html/footer/_footer.html?__inline">
+
+  <script src="lib/mod.js"></script>
+  <script type="text/javascript">
+    require.async("modules/app/app.js");
+  </script>
+  </body>
+</html>
